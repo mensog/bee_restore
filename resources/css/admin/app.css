@@ -1,0 +1,132 @@
+
+.menubar-fixed-panel {
+    background: #373736;
+    border: 0;
+}
+
+.menubar-inverse .gui-controls li > a:hover .title {
+    color: #EDEDED;
+}
+
+.menubar-pin .menubar-inverse .gui-controls > li:not(.gui-folder) > a:hover {
+    background: #2E2E2E;
+}
+
+.menubar-inverse .gui-controls li > a:hover .gui-icon {
+    color: #EDEDED;
+}
+
+.menubar-pin .menubar-inverse .gui-folder:hover:not(.active) .gui-icon {
+    color: #070607;
+}
+
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.gui-controls li .title, .menubar-inverse .gui-controls li.gui-folder > a .title {
+    color: #9F9F9F;
+}
+
+.menubar-inverse .gui-controls li.active > a .title, .menubar-inverse .gui-controls li.gui-folder.expanded > a .title, .menubar-inverse .gui-controls li.gui-folder.active > a .title, .menubar-inverse .gui-controls li.gui-folder.expanded > a .title, .menubar-inverse .gui-controls li.gui-folder.active > a .title {
+    color: #EDEDED;
+}
+
+.menubar-inverse .gui-controls a.expanded .gui-icon, .menubar-inverse .gui-controls li.active .gui-icon, .menubar-inverse .gui-controls li.active .gui-icon:hover {
+    background: #FDD900;
+}
+
+.menubar-visible .menubar-inverse .gui-folder:hover:not(.active) .gui-icon {
+    background: #FDD900;
+}
+
+.menubar-visible .menubar-inverse .gui-controls li:not(.gui-folder) a:hover {
+    background: #2E2E2E;
+}
+
+#menubar.menubar-inverse {
+    color: #fff;
+}
+
+.gui-folder > a:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    transform: rotate(90deg);
+}
+
+.menubar-inverse .gui-folder > a:after {
+    right: 22px;
+}
+
+.gui-controls > .gui-folder.expanding > a:after, .gui-controls > .gui-folder.expanded > a:after {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.menubar-pin .menubar-inverse .gui-folder:hover:not(.active) .gui-icon {
+    background: #FDD900;
+}
+
+.menubar-inverse .gui-controls > li ul > li > a:active, .menubar-inverse .gui-controls > li ul > li > a.active {
+    background: #2E2E2E;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    color: #fafafa;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #FDD900;
+    color: #000;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    padding: 12px 12px;
+    border: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #FDD900;
+    color: #000;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next, .dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+    color: #D8D8D8;
+    background: #ffffff;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover {
+    color: #000;
+}
+
+.menubar-inverse .gui-controls > .gui-folder.expanding > a:after, .menubar-inverse .gui-controls > .gui-folder.expanded > a:after {
+    color: #ededed;
+}
+
+.menubar-inverse .gui-controls > li ul > li > a:hover, .menubar-inverse .gui-controls > li ul > li > a:focus {
+    background: #2E2E2E;
+}

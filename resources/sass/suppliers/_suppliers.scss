@@ -1,0 +1,112 @@
+.suppliers {
+
+   .main-screen {
+      background: $light-grey url(/img/suppliers/main-screen-bg.png) right bottom no-repeat;
+      background-size: contain;
+
+      &__title {
+         max-width: 695px;
+      }
+
+      &__benefits-item {
+         &:first-child {
+            max-width: 160px;
+         }
+      }
+
+      &__benefits-title {
+         font-size: 16px;
+         font-weight: bold;
+      }
+   }
+}
+
+.become {
+
+    .container {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 396px;
+        padding: 30px;
+        background: $light-grey;
+
+        &_bg {
+            background: $light-grey url(/img/suppliers/note-book.png) 93% 85% / 350px no-repeat;
+        }
+    }
+
+    &__title {
+        max-width: 445px;
+        margin: 0 0 18px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 1.2;
+        color: $black;
+    }
+
+    &__subtitle {
+        margin: 0 0 21px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.2;
+        color: $black;
+    }
+
+    &__text {
+        margin: 0;
+        color: $black;
+        max-width: 320px;
+        line-height: 1.2;
+
+        a {
+           color: $blue;
+           transition: all .3s;
+
+           &:hover {
+              text-decoration: underline;
+           }
+        }
+
+        &_gray {
+            margin: 0 0 16px;
+            color: $secondary-gray;
+        }
+
+        &_small {
+            margin-top: 8px;
+            font-size: 11px;
+            line-height: 1.2;
+            color: $secondary-gray;
+        }
+    }
+
+    &__btn  {
+        margin-top: auto;
+        max-width: 290px;
+    }
+
+    &__input {
+        width: 100%;
+        margin: 0 0 20px;
+        padding: 15px 20px;
+        font-size: 14px;
+        color: $black;
+        background: $white;
+        border: 1px solid $grey;
+        border-radius: 5px;
+
+        &:last-of-type {
+            margin-bottom: 40px;
+        }
+
+        &::placeholder {
+            font-size: 14px;
+            color: $secondary-gray;
+        }
+    }
+}

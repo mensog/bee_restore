@@ -1,0 +1,104 @@
+.btn.btn-primary {
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    color: $black;
+    background: $primary-yellow;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        background: #F0CE00;
+        box-shadow: none;
+    }
+
+    &:active {
+        background: #F0CE00;
+    }
+}
+
+.btn.btn-primary.loading {
+    &:before {
+        content: '';
+        background: url("/svg/preloaders/loading.svg");
+        background-size: contain;
+        max-width: 20px;
+        height: 20px;
+        width: 100%;
+        position: absolute;
+        left: 10%;
+        top: 25%;
+        margin-right: 10px;
+        vertical-align: text-bottom;
+        display: inline-block;
+        z-index: 3;
+    }
+}
+
+.btn:hover {
+    background: $light-yellow;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 700;
+    color: #333e48;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.875rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 1.4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn.btn-inactive {
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    color: $secondary-gray;
+    background: #fef099;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+.btn.btn-empty {
+    border: 2px solid #FDD900;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #242424;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #FDD900;
+    }
+}
+
+button {
+    svg {
+        margin-bottom: 0;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+}
+
+.cart-minus, .cart-plus {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 16px;
+    cursor: pointer;
+    color: #000000;
+    padding: 0 10px;
+}

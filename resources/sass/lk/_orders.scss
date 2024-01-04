@@ -1,0 +1,172 @@
+.lk-orders {
+    padding: 30px;
+    background-color: $white;
+
+    &__heading {
+        margin: 0 0 30px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 26px;
+        color: $black;
+    }
+
+    &__item {
+        cursor: pointer;
+        min-height: 140px;
+        padding: 24px;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        background-color: $quaternary-gray;
+    }
+
+    &__item-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item-box {
+
+    }
+
+    &__item-date {
+        margin: 0 0 8px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 14px;
+        color: $black;
+    }
+
+    &__item-number {
+        font-size: 14px;
+        line-height: 12px;
+        color: $secondary-gray;
+    }
+
+    &__item-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-statusbox {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    &__item-icon {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        margin-right: 8px;
+        padding: 4px;
+        background: #818181;
+        text-align: center;
+        border-radius: 50%;
+
+        svg {
+            vertical-align: text-top;
+            margin: 0;
+        }
+
+        &_blue {
+            background: #1990FE;
+        }
+
+        &_red {
+            background: #EB5757;
+        }
+
+        &_green {
+            background: $green;
+        }
+
+        &_gray {
+            background: #818181;
+        }
+
+        &_orange {
+            background: $orange;
+        }
+    }
+
+    &__item-link {
+        font-weight: bold;
+        font-size: 14px;
+        margin-right: 20px;
+
+
+        &_blue {
+            color: #1990FE;
+
+            &:hover {
+                color: #1990FE;
+            }
+        }
+
+        &_red {
+            color: #EB5757;
+
+            &:hover {
+                color: #EB5757;
+            }
+        }
+
+        &_green {
+            color: $green;
+
+            &:hover {
+                color: $green;
+            }
+        }
+
+        &_gray {
+            color: #818181;
+
+            &:hover {
+                color: #818181;
+            }
+        }
+
+        &_orange {
+            color: $orange;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    &__item-price {
+        margin: 0 0 7px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 16px;
+        color: $black;
+    }
+
+    &__item-statusprice {
+        font-size: 11px;
+        line-height: 13px;
+        color: $secondary-gray;
+    }
+
+    &__item-open {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+}
+
+.lk-orders__item .lk-orders__item-open svg {
+    transition: 145ms ease-in-out;
+}
+
+.lk-orders__item:not(.collapsed) .lk-orders__item-open svg {
+    transform: rotate(180deg);
+}
+
+.lk-orders__item.collapsed .lk-orders__item-open svg {
+    transform: rotate(0);
+}

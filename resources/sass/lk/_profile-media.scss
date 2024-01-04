@@ -1,0 +1,37 @@
+@media (max-width: 991px) {
+    .checkout-page {
+
+        .cart {
+            &__subheading {
+                padding-top: 16px;
+                font-size: 16px;
+                margin-bottom: 16px;
+            }
+
+            &__after-title {
+                font-size: 12px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 0;
+        }
+
+        .form-group .form-control-container {
+            margin-bottom: 16px;
+
+            input {
+                height: 48px;
+            }
+
+            label {
+                font-size: 12px;
+            }
+        }
+
+        .btn.btn-primary {
+            font-size: 14px;
+        }
+    }
+}

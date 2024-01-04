@@ -1,0 +1,104 @@
+.services {
+   padding: 64px 0;
+    background-color: #fff;
+
+   &__heading {
+      margin: 0 0 48px;
+      line-height: 38px;
+   }
+
+    &__item {
+        max-width: 260px;
+        min-height: 452px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 25px;
+        background-color: $quaternary-gray;
+
+        &_empty {
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+            border: 2px solid $primary-yellow;
+            border-radius: 8px;
+        }
+
+        img {
+            display: block;
+            margin: 0 0 16px;
+        }
+    }
+
+    &__item-title {
+        margin: 0 0 8px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: $black;
+    }
+
+    &__item-descr {
+        margin: 0 0 8px;
+        font-size: 11px;
+        line-height: 12px;
+        color: $secondary-gray;
+    }
+
+    &__item-time {
+        margin: 0 0 16px;
+        position: relative;
+        padding-left: 16px;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 12px;
+        color: $black;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            background: url(/svg/services/clock.svg) center no-repeat;
+        }
+    }
+
+    &__item-input {
+       width: 100%;
+        padding: 14px;
+        background: $white;
+        border: 1px solid $tertiary-gray;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 14px;
+        line-height: 12px;
+        color: $secondary-gray;
+
+        &::placeholder {
+            font-size: 14px;
+            line-height: 12px;
+            color: $secondary-gray;
+        }
+    }
+
+    &__item-price {
+       margin: 0 0 16px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 20px;
+        color: $black;
+
+        span {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 12px;
+        }
+    }
+
+    .contact {
+       margin-top: 64px;
+       padding: 0;
+    }
+}

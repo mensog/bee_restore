@@ -1,0 +1,239 @@
+main {
+    .floating-label {
+        .form-control-container {
+            .form-control {
+                padding-top: 29px;
+                padding-bottom: 11px;
+            }
+
+            label {
+                -webkit-transition: 0.2s ease all;
+                -o-transition: 0.2s ease all;
+                transition: 0.2s ease all;
+                position: absolute;
+                left: 20px;
+                bottom: 0;
+                width: 100%;
+                pointer-events: none;
+                top: 15px;
+
+                font-weight: normal;
+                font-size: 14px;
+                color: $secondary-gray;
+            }
+
+            .form-control:focus ~ label {
+                top: 9px;
+                font-size: 11px !important;
+
+            }
+
+            .form-control:not(:placeholder-shown) ~ label {
+                top: 9px;
+                font-size: 11px !important;
+            }
+
+            .form-control.dirty ~ label {
+                top: 9px;
+                font-size: 11px !important;
+            }
+
+            .form-control.is-invalid {
+                border-color: $red;
+            }
+
+            .form-control.is-invalid ~ label {
+                color: $red;
+            }
+
+            .form-control.is-invalid:focus, .form-control.is-valid:focus {
+                box-shadow: none;
+            }
+
+            .form-control.is-valid ~ label {
+                color: $green;
+            }
+
+            .form-control.is-valid {
+                border-color: $green;
+            }
+        }
+    }
+
+    .form {
+        textarea.form-control {
+            height: auto;
+        }
+
+        .form-control {
+            background: #F4F4F4;
+            border: 1px solid #E3E3E3;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 20px;
+            height: 52px;
+            color: #000000;
+            font-size: 14px;
+
+            ::placeholder {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 14px;
+                color: #9F9F9F;
+            }
+        }
+
+        .form-control-container {
+            position: relative;
+        }
+
+        .show-password {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+
+            :hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    input[type="checkbox"].beeclub-switcher {
+        position: relative;
+        appearance: none;
+        outline: none;
+        width: 60px;
+        height: 30px;
+        background-color: #ffffff;
+        border: 3px solid $tertiary-gray;
+        border-radius: 50px;
+        box-shadow: inset -30px 0 0 0 $tertiary-gray;
+        transition-duration: 200ms;
+        vertical-align: middle;
+    }
+
+    input[type="checkbox"].beeclub-switcher:after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 23px;
+        height: 23px;
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="checkbox"].beeclub-switcher:checked {
+        border-color: $primary-yellow;
+        box-shadow: inset 30px 0 0 0 $primary-yellow;
+    }
+
+    input[type="checkbox"].beeclub-switcher:checked:after {
+        left: 30px;
+        box-shadow: -2px 4px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .rating {
+        margin: 0;
+        padding: 0;
+        border: none;
+
+        &__group {
+            position: relative;
+            width: 10em;
+            height: 2em;
+            background-image: url('/svg/product/star-off.svg');
+            background-size: 2em 1.9em;
+            background-repeat: repeat-x;
+        }
+
+        &__input {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+        }
+
+        &__input:focus ~ .rating__focus {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            outline: 0.2em solid #4a90e2;
+            outline-offset: 0.2em;
+        }
+
+        &__star {
+            position: absolute;
+            top: 0 !important;
+            left: 0 !important;
+            margin: 0;
+            height: 2em;
+            background-size: 2em 1.9em;
+            background-repeat: repeat-x;
+        }
+
+        &__star:hover,
+        &__input:checked + .rating__star {
+            background-image: url('/svg/product/star-on.svg');
+            cursor: pointer;
+        }
+
+        &__star:hover ~ .rating__star {
+            background-image: url('/svg/product/star-off.svg');
+        }
+
+        &__star:nth-of-type(1) {
+            z-index: 5;
+            width: 2em;
+        }
+
+        &__star:nth-of-type(2) {
+            z-index: 4;
+            width: 4em;
+        }
+
+        &__star:nth-of-type(3) {
+            z-index: 3;
+            width: 6em;
+        }
+
+        &__star:nth-of-type(4) {
+            z-index: 2;
+            width: 8em;
+        }
+
+        &__star:nth-of-type(5) {
+            z-index: 1;
+            width: 10em;
+        }
+    }
+
+    .input-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+    }
+
+    .delivery__label {
+        transition: 145ms ease-in-out;
+        cursor: pointer;
+    }
+
+    .delivery__label:hover,
+    .delivery__input:focus + .delivery__label {
+        box-shadow: #fdd900 0 0 0 3px;
+    }
+
+    .delivery__input:checked + .delivery__label {
+        border-color: #FDD900 !important;
+    }
+}
+
+

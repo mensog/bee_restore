@@ -1,0 +1,273 @@
+@media (max-width: 1199px) {
+
+    .categories {
+        padding: 30px 0;
+
+        &__heading {
+            margin: 0 0 24px;
+            font-size: 24px;
+        }
+
+        &__item {
+            margin-bottom: 10px;
+        }
+
+        &__items {
+            justify-content: space-around;
+        }
+    }
+
+    .liked {
+        padding: 30px 0;
+        background-color: #FFFFFF;
+
+        &__heading {
+            font-size: 24px;
+            margin: 0 0 24px;
+            line-height: 1;
+        }
+
+        &__item {
+            padding: 16px;
+        }
+
+        &__item-favorite {
+            top: 120px;
+        }
+
+        &__item {
+            min-height: 350px;
+        }
+
+        &__item-img {
+            max-width: 120px;
+            max-height: 120px;
+            margin: 0 auto 20px;
+        }
+
+        &__item-descr {
+            font-size: 12px;
+        }
+
+        &__item-article {
+            font-size: 10px;
+        }
+
+        &__item-price {
+            font-size: 10px;
+        }
+
+        &__item-price span {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+    .store .contact {
+        padding-top: 0;
+    }
+
+    .breadcrumb {
+        margin: 0 0 18px;
+
+        &__link, &__item {
+            font-size: 11px;
+        }
+    }
+
+
+    .delivery {
+        padding: 16px 0 30px;
+
+        &__box {
+            margin: 0 0 16px;
+        }
+
+        &__box-title {
+            font-size: 24px;
+            line-height: 1;
+
+            span {
+                margin: 0 0 3px;
+                font-size: 12px;
+            }
+        }
+
+        &__items {
+            padding: 24px 16px;
+            margin: 0;
+        }
+
+        &__item-title {
+            font-size: 12px;
+            margin: 0 0 5px;
+        }
+
+        &__item-descr {
+            font-size: 16px;
+        }
+
+        &__box-img {
+            margin-right: 5px;
+            max-width: 64px;
+            min-height: 64px;
+            background-color: #fff;
+
+            img {
+                max-width: 50px;
+            }
+        }
+
+        &__pros {
+            display: none;
+        }
+    }
+
+    .liked {
+        &__item {
+            min-height: 170px;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 0 10px;
+        }
+
+        &__item-body {
+            margin-right: 10px;
+        }
+
+        &__item-footer {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__item-favorite {
+            top: auto;
+            bottom: 20px;
+            left: 0;
+        }
+
+        &__item-price span {
+            display: block;
+        }
+
+        &__item-btn.btn {
+            max-width: 200px;
+            max-height: 34px;
+            font-size: 12px;
+            line-height: 0;
+        }
+
+        &__item-article {
+            margin: 0 0 5px;
+        }
+
+        &__item-img {
+            margin: 0;
+        }
+
+        &__item-descr {
+            margin: 0 0 3px;
+        }
+
+        &__item-price {
+            margin: 0 0 6px;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 767px) {
+
+    .delivery {
+        &__items {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+            margin-bottom: 10px;
+            margin-right: 0;
+            padding-left: 30px;
+
+            &::before {
+                background-size: 20px !important;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+
+    .categories {
+        &__item {
+            width: 100%;
+            max-width: 155px;
+            height: auto;
+            min-height: 130px;
+            padding: 16px;
+        }
+
+        &__item-img {
+            max-width: 40px;
+        }
+
+        &__item-descr {
+            font-size: 12px;
+
+            br {
+                display: none;
+            }
+
+            &::before {
+                top: 1px;
+                background-size: 14px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__item_empty {
+            margin: 0;
+            width: 100%;
+            max-width: 100%;
+            min-height: 48px;
+            max-height: 48px;
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+
+    .liked {
+
+        &__item {
+            padding: 10px;
+        }
+
+        &__item-img {
+            max-width: 100px;
+            max-height: 100px;
+            margin: 0;
+        }
+
+        &__item-footer {
+            max-width: 130px;
+        }
+    }
+
+    .categories__item {
+        max-width: 100%;
+    }
+}

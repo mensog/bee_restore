@@ -1,0 +1,50 @@
+.card-lk-notifications {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.card-lk-notification {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 24px;
+    background: $light-grey;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__header {
+        margin: 0 0 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: bold;
+        color: $black;
+    }
+
+    &__date {
+        font-size: 14px;
+        color: $secondary-gray;
+    }
+
+    &__order {
+        margin-right: 5px;
+        font-size: 14px;
+        color: $blue;
+    }
+
+    &__descr {
+        font-size: 14px;
+        color: $black;
+    }
+}

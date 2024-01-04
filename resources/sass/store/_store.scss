@@ -1,0 +1,113 @@
+.delivery {
+    padding: 28px 0 64px;
+
+    &__box {
+        margin: 0 0 48px;
+    }
+
+    &__box-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 95px;
+        min-height: 95px;
+        background-color: $white;
+    }
+
+    &__items {
+        margin: 0 0 30px;
+        display: flex;
+        padding: 30px;
+        background-color: $white;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        max-width: 269px;
+        margin-right: 81px;
+        padding-left: 48px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 32px;
+            height: 32px;
+        }
+
+        &:first-child {
+            &::before {
+                background: url(/svg/store/truck.svg) center no-repeat;
+            }
+        }
+
+        &:nth-child(2) {
+            &::before {
+                background: url(/svg/store/ruble.svg) center no-repeat;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            &::before {
+                background: url(/svg/store/weight.svg) center no-repeat;
+            }
+        }
+    }
+
+    &__item-title {
+        margin: 0 0 15px;
+        font-size: 14px;
+        line-height: 12px;
+        color: $secondary-gray;
+    }
+
+    &__item-descr {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 16px;
+        color: $black;
+    }
+
+    &__pros {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__pros-item {
+        width: 100%;
+        min-height: 173px;
+
+        img {
+            margin: 0 0 16px;
+            max-width: 100%;
+            width: 64px;
+        }
+    }
+
+    &__pros-title {
+        margin: 0 0 16px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 14px;
+        color: $black;
+    }
+
+    &__pros-descr {
+        font-size: 14px;
+        line-height: 20px;
+        color: $black;
+    }
+}
+
+.store#content {
+    background-color: $white;
+
+    .improve {
+        margin-bottom: 64px;
+    }
+}

@@ -1,0 +1,73 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: db
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_TCP_PORT: ${DB_PORT}
+    ports:
+      - "3307:${DB_PORT}"
+    networks:
+      - mynet
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8100:8100"
+    networks:
+      - mynet
+    volumes:
+      - ./:/app
+      # - ./conf.d/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      # - ./conf.d/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+    depends_on:
+      - mysql
+    entrypoint: [ "/bin/bash", "-c" ]
+    command:
+      - |
+        npm install
+        php artisan key:generate && php artisan migrate
+        php artisan serve --host=0.0.0.0 --port=8100
+  # webserver:
+  #   image: nginx:latest
+  #   ports:
+  #     - 8080:80
+  #   volumes:
+  #     - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+  #     - ./:/app
+
+  redis:
+    image: redis:4.0
+    container_name: app_redis
+    ports:
+      - "6379:6379"
+    networks:
+      - mynet
+  # mailpit:
+  #   image: axllent/mailpit
+  #   container_name: mailpit
+  #   restart: always
+  #   volumes:
+  #     - ./data:/data
+  #   ports:
+  #     - 8025:8025
+  #     - 1025:1025
+  #   environment:
+  #     MP_MAX_MESSAGES: 5000
+  #     MP_DATA_FILE: /data/mailpit.db
+  #     MP_SMTP_AUTH_ACCEPT_ANY: 1
+  #     MP_SMTP_AUTH_ALLOW_INSECURE: 1
+volumes:
+  mysql_data:
+networks:
+  mynet:
+    driver: bridge

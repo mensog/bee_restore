@@ -1,0 +1,233 @@
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+    .checkout-page .delivery-cost {
+        display: block;
+        padding: 30px 0 0;
+
+
+        .row {
+            .col-6 {
+                &:nth-of-type(odd) {
+                    padding-right: 0 !important;
+                }
+            }
+        }
+
+    }
+
+    .cart {
+        &__wrap {
+            padding: 30px 16px;
+            margin-bottom: 30px;
+        }
+
+        &__heading {
+            font-size: 24px;
+            padding-bottom: 16px;
+        }
+
+    }
+
+    .checkout-page .cart__subheading {
+        //margin-bottom: 5px;
+        padding-top: 16px;
+        font-size: 18px;
+    }
+    .checkout-page .cart__after-title {
+        margin-bottom: 16px;
+        font-size: 12px;
+    }
+
+
+    main .form .form-control {
+        font-size: 12px;
+
+        &::placeholder {
+            font-size: 12px;
+        }
+    }
+
+    main .floating-label .form-control-container label {
+        font-size: 12px;
+    }
+
+    .checkout-page .cart .form-group:first-of-type {
+        margin-bottom: 0;
+    }
+
+    .checkout-page {
+
+        .container {
+            padding-bottom: 0;
+        }
+        .delivery-cost__heading {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .delivery-cost__item {
+            padding: 16px;
+            max-height: 190px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-grow: 1;
+        }
+
+        .delivery-cost__item-icon {
+            margin-bottom: 8px;
+            max-width: 18px;
+        }
+
+        .delivery-cost__item-heading {
+            font-size: 14px;
+            padding: 0 !important;
+        }
+
+        .delivery-cost__item-descr {
+            margin-bottom: auto;
+            font-size: 12px;
+
+            br {
+                display: none;
+            }
+
+        }
+
+        .delivery-cost__item-time {
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+
+        .breadcrumbs .container {
+            padding-top: 16px;
+            padding-bottom: 16px !important;
+        }
+    }
+
+    .checkout {
+        padding: 30px 30px 0;
+        margin-bottom: 30px;
+        &__heading {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        .checkout__total {
+            font-size: 14px;
+        }
+
+        .checkout__total-price {
+            font-size: 16px;
+        }
+
+    }
+
+    .checkout-page .checkout__btn {
+        position: fixed;
+        bottom: 67px;
+        left: 50%;
+        max-width: 296px;
+        font-size: 14px;
+        transform: translateX(-50%);
+        z-index: 1000;
+    }
+
+    .checkout-page ~ .footer .container {
+        padding-bottom: 67px;
+    }
+
+    .checkout-page ~ .app-banner {
+        display: none;
+    }
+}
+
+
+.col-lg-3 {
+    &:nth-child(odd) {
+        .delivery-cost__item {
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    &:nth-of-type(2) {
+        .delivery-cost__item {
+            margin-bottom: 10px;
+        }
+    }
+
+    &:last-of-type {
+        .delivery-cost__item {
+            margin-bottom: 0;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 767px) {
+
+    .form-control-container #city,
+    .form-control-container #date {
+        margin-top: 16px;
+    }
+
+    .form-control-container #phone,
+    .form-control-container #apartment,
+    .form-control-container #date,
+    .form-control-container #elevator,
+    .form-control-container #house, {
+        margin-bottom: 22px;
+    }
+
+    .promocode {
+        padding: 24px 16px;
+
+        &__heading {
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        &__input {
+            margin-bottom: 16px;
+            font-size: 12px;
+
+            &::placeholder {
+                font-size: 12px;
+            }
+        }
+
+        &__btn {
+            font-size: 12px;
+        }
+    }
+
+}
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 360px) {
+    .checkout__wrap {
+        span {
+            &:last-child {
+                text-align: right;
+            }
+        }
+
+        .checkout__box > span {
+            text-align: left;
+        }
+    }
+}
+

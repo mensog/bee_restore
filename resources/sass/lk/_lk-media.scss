@@ -1,0 +1,129 @@
+@media (max-width: 991px) {
+
+    .lk-page {
+        padding-bottom: 0;
+    }
+
+    .card-lk {
+        padding: 24px 16px;
+        margin-bottom: 40px;
+
+        &__header {
+            margin-bottom: 16px;
+        }
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        &__img {
+            max-width: 143px;
+        }
+    }
+
+    .card-lk .card-lk__score {
+        margin-bottom: 24px;
+        font-size: 30px;
+    }
+
+    .card-lk .card-lk__link {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .card-lk h4 {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    .card-lk .card-log__title {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .card-lk .card-log__date {
+        font-size: 12px;
+        position: static;
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .card-lk .card-log {
+        display: block;
+        padding: 16px;
+        height: auto;
+    }
+
+
+    .lk-sidebar {
+        margin-bottom: 0;
+        border-bottom: 1px solid #F4F4F4;
+
+        &_dn {
+            display: none;
+        }
+
+        &__header {
+            padding: 30px 0 0;
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 24px;
+        }
+
+        &__img {
+            margin-right: 8px;
+            margin-bottom: 0;
+
+            img {
+                max-width: 30px;
+            }
+        }
+
+        &__close {
+            display: block;
+            margin-left: auto;
+        }
+
+        &__user {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        ul {
+            padding-bottom: 24px;
+
+            li a {
+                font-size: 12px;
+                padding: 11px 0;
+            }
+        }
+    }
+
+    .lk-help {
+        padding: 30px 0;
+
+        &_dn {
+            display: none;
+        }
+
+        &__header {
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        &__link {
+            margin-bottom: 6px;
+            font-size: 12px;
+
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+
+}
