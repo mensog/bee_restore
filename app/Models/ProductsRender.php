@@ -6,7 +6,7 @@
  * Time: 13:04
  */
 
-namespace App;
+namespace App\Models;
 
 
 class ProductsRender

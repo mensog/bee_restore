@@ -2,7 +2,7 @@
 
 namespace App\View\Components;
 
-use App\Product;
+use App\Models\Product;
 use Illuminate\View\Component;
 
 

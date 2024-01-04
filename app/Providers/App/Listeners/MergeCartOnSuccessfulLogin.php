@@ -2,7 +2,7 @@
 
 namespace App\Providers\App\Listeners;
 
-use App\Cart;
+use App\Models\Cart;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;

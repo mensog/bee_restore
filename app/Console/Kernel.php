@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->call('App\Cart::deleteExpiredCarts')->dailyAt('04:00');
+        $schedule->call('App\Models\Cart::deleteExpiredCarts')->dailyAt('04:00');
     }
 
     /**

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    \App\DeliveryColors::COLOR_BLUE => 'синий',
-    \App\DeliveryColors::COLOR_WHITE => 'белый',
-    \App\DeliveryColors::COLOR_YELLOW => 'желтый',
+    \App\Models\DeliveryColors::COLOR_BLUE => 'синий',
+    \App\Models\DeliveryColors::COLOR_WHITE => 'белый',
+    \App\Models\DeliveryColors::COLOR_YELLOW => 'желтый',
 ];

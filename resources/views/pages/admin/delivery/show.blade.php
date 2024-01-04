@@ -36,9 +36,9 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <select id="color" name="color" class="form-control">
-                                                <option value="{{ \App\DeliveryColors::COLOR_WHITE }}">{{ __('delivery_moderation_color.' . \App\DeliveryColors::COLOR_WHITE) }}</option>
-                                                <option value="{{ \App\DeliveryColors::COLOR_BLUE }}">{{ __('delivery_moderation_color.' . \App\DeliveryColors::COLOR_BLUE) }}</option>
-                                                <option value="{{ \App\DeliveryColors::COLOR_YELLOW }}">{{ __('delivery_moderation_color.' . \App\DeliveryColors::COLOR_YELLOW) }}</option>
+                                                <option value="{{ \App\Models\DeliveryColors::COLOR_WHITE }}">{{ __('delivery_moderation_color.' . \App\Models\DeliveryColors::COLOR_WHITE) }}</option>
+                                                <option value="{{ \App\Models\DeliveryColors::COLOR_BLUE }}">{{ __('delivery_moderation_color.' . \App\Models\DeliveryColors::COLOR_BLUE) }}</option>
+                                                <option value="{{ \App\Models\DeliveryColors::COLOR_YELLOW }}">{{ __('delivery_moderation_color.' . \App\Models\DeliveryColors::COLOR_YELLOW) }}</option>
                                             </select>
                                             <label for="color">Цвет</label>
                                         </div>

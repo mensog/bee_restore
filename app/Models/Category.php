@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -34,22 +34,22 @@ class Category extends Model
      */
     public function products()
     {
-        return $this->hasMany('App\Product');
+        return $this->hasMany('App\Models\Product');
     }
 
     public function partner()
     {
-        return $this->belongsTo('App\Partner', 'store_id', 'id');
+        return $this->belongsTo('App\Models\Partner', 'store_id', 'id');
     }
 
     public function parentCategory()
     {
-        return $this->belongsTo('App\Category', 'parent', 'id');
+        return $this->belongsTo('App\Models\Category', 'parent', 'id');
     }
 
     public function childCategories()
     {
-        return $this->hasMany('App\Category', 'parent', 'id');
+        return $this->hasMany('App\Models\Category', 'parent', 'id');
     }
 
     public function setParent($parentId)

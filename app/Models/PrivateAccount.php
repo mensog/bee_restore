@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -8,7 +8,7 @@ class PrivateAccount extends Model
 {
     public function user()
     {
-        return $this->hasOne('App\User');
+        return $this->hasOne('App\Models\User');
     }
 
     public function getTotalAmount()

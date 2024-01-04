@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Category;
+use App\Models\Category;
 use App\Http\Controllers\Controller;
-use App\Partner;
-use App\Product;
-use App\ProductAttribute;
-use App\ProductAttributeValue;
-use App\UserRole;
+use App\Models\Partner;
+use App\Models\Product;
+use App\Models\ProductAttribute;
+use App\Models\ProductAttributeValue;
+use App\Models\UserRole;
 use App\View\Components\Admin\Product\Attribute;
 use Carbon\Carbon;
 use Illuminate\Http\Request;

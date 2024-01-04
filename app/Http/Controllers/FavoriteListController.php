@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\ProductsFavoritesRender;
+use App\Models\ProductsFavoritesRender;
 use Illuminate\Http\Request;
 
 class FavoriteListController extends ProductsRenderController

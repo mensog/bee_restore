@@ -16,16 +16,16 @@ class AddSlugColumnToPartnersTable extends Migration
         Schema::table('partners', function (Blueprint $table) {
             $table->string('slug')->nullable();
         });
-        $leroy = \App\Partner::find(1);
+        $leroy = \App\Models\Partner::find(1);
         $leroy->slug = 'leroy-merlin';
         $leroy->save();
-        $obi = \App\Partner::find(2);
+        $obi = \App\Models\Partner::find(2);
         $obi->slug = 'obi';
         $obi->save();
-        $petrovich = \App\Partner::find(3);
+        $petrovich = \App\Models\Partner::find(3);
         $petrovich->slug = 'petrovich';
         $petrovich->save();
-        $castorama = \App\Partner::find(4);
+        $castorama = \App\Models\Partner::find(4);
         $castorama->slug = 'castorama';
         $castorama->save();
     }

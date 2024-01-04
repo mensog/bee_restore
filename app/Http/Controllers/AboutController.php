@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Delivery;
+use App\Models\Delivery;
 
 class AboutController extends Controller
 {

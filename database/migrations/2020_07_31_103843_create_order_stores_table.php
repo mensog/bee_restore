@@ -21,7 +21,7 @@ class CreateOrderStoresTable extends Migration
             $table->string('status');
             $table->string('store_order_id')->nullable();
         });
-        \App\Order::all()->each(function ($order) {
+        \App\Models\Order::all()->each(function ($order) {
             $order->fillOrderStores();
         });
     }

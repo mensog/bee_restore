@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Category;
-use App\Partner;
+use App\Models\Category;
+use App\Models\Partner;
 use Illuminate\Http\Request;
 
 class MainController extends Controller

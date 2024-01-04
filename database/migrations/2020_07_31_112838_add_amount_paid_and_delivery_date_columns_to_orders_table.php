@@ -17,7 +17,7 @@ class AddAmountPaidAndDeliveryDateColumnsToOrdersTable extends Migration
             $table->integer('amount_paid')->default(0);
             $table->date('delivery_date')->nullable();
         });
-        \App\Order::all()->each(function ($order) {
+        \App\Models\Order::all()->each(function ($order) {
            $order->amount_paid = $order->getSum();
            $order->save();
         });

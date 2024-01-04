@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Cart;
-use App\Delivery;
-use App\Order;
-use App\Partner;
-use App\Product;
-use App\Promocode;
+use App\Models\Cart;
+use App\Models\Delivery;
+use App\Models\Order;
+use App\Models\Partner;
+use App\Models\Product;
+use App\Models\Promocode;
 use Illuminate\Http\Request;
 
 class CartController extends Controller

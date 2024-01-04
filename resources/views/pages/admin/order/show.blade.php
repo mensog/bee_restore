@@ -202,21 +202,21 @@
                                             <option
                                                 value="{{ $order->status }}">{{ __('order_status.' . $order->status) }}</option>
                                             <option
-                                                value="{{ \App\OrderStatus::CANCELED }}">{{ __('order_status.' . \App\OrderStatus::CANCELED) }}</option>
+                                                value="{{ \App\Models\OrderStatus::CANCELED }}">{{ __('order_status.' . \App\Models\OrderStatus::CANCELED) }}</option>
                                             <option
-                                                value="{{ \App\OrderStatus::PAID }}">{{ __('order_status.' . \App\OrderStatus::PAID) }}</option>
+                                                value="{{ \App\Models\OrderStatus::PAID }}">{{ __('order_status.' . \App\Models\OrderStatus::PAID) }}</option>
                                             <option
-                                                value="{{ \App\OrderStatus::READY_FOR_DELIVERY }}">{{ __('order_status.' . \App\OrderStatus::READY_FOR_DELIVERY) }}</option>
+                                                value="{{ \App\Models\OrderStatus::READY_FOR_DELIVERY }}">{{ __('order_status.' . \App\Models\OrderStatus::READY_FOR_DELIVERY) }}</option>
                                             <option
-                                                value="{{ \App\OrderStatus::GIVEN_TO_COURIER }}">{{ __('order_status.' . \App\OrderStatus::GIVEN_TO_COURIER) }}</option>
+                                                value="{{ \App\Models\OrderStatus::GIVEN_TO_COURIER }}">{{ __('order_status.' . \App\Models\OrderStatus::GIVEN_TO_COURIER) }}</option>
                                             <option
-                                                value="{{ \App\OrderStatus::RE_DELIVERY }}">{{ __('order_status.' . \App\OrderStatus::RE_DELIVERY) }}</option>
+                                                value="{{ \App\Models\OrderStatus::RE_DELIVERY }}">{{ __('order_status.' . \App\Models\OrderStatus::RE_DELIVERY) }}</option>
                                             <option
-                                                value="{{ \App\OrderStatus::REFUNDED }}">{{ __('order_status.' . \App\OrderStatus::REFUNDED) }}</option>
+                                                value="{{ \App\Models\OrderStatus::REFUNDED }}">{{ __('order_status.' . \App\Models\OrderStatus::REFUNDED) }}</option>
                                             <option
-                                                value="{{ \App\OrderStatus::ORDERED }}">{{ __('order_status.' . \App\OrderStatus::ORDERED) }}</option>
+                                                value="{{ \App\Models\OrderStatus::ORDERED }}">{{ __('order_status.' . \App\Models\OrderStatus::ORDERED) }}</option>
                                             <option
-                                                value="{{ \App\OrderStatus::COMPLETED }}">{{ __('order_status.' . \App\OrderStatus::COMPLETED) }}</option>
+                                                value="{{ \App\Models\OrderStatus::COMPLETED }}">{{ __('order_status.' . \App\Models\OrderStatus::COMPLETED) }}</option>
                                         </select>
                                         <label for="status">Статус заказа</label>
                                     </div>
@@ -396,32 +396,32 @@
                                                 role="menu" style="text-align: left;width: fit-content;">
                                                 <li>
                                                     <a class="store-order-status-control" href="javascript:void(0);"
-                                                       data-status="{{ \App\OrderStoreStatus::CANCELED }}">
-                                                        {{ __('order_store_status.' . \App\OrderStoreStatus::CANCELED) }}
+                                                       data-status="{{ \App\Models\OrderStoreStatus::CANCELED }}">
+                                                        {{ __('order_store_status.' . \App\Models\OrderStoreStatus::CANCELED) }}
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="store-order-status-control" href="javascript:void(0);"
-                                                       data-status="{{ \App\OrderStoreStatus::PAID }}">
-                                                        {{ __('order_store_status.' . \App\OrderStoreStatus::PAID) }}
+                                                       data-status="{{ \App\Models\OrderStoreStatus::PAID }}">
+                                                        {{ __('order_store_status.' . \App\Models\OrderStoreStatus::PAID) }}
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="store-order-status-control" href="javascript:void(0);"
-                                                       data-status="{{ \App\OrderStoreStatus::READY_FOR_DELIVERY }}">
-                                                        {{ __('order_store_status.' . \App\OrderStoreStatus::READY_FOR_DELIVERY) }}
+                                                       data-status="{{ \App\Models\OrderStoreStatus::READY_FOR_DELIVERY }}">
+                                                        {{ __('order_store_status.' . \App\Models\OrderStoreStatus::READY_FOR_DELIVERY) }}
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="store-order-status-control" href="javascript:void(0);"
-                                                       data-status="{{ \App\OrderStoreStatus::ORDERED }}">
-                                                        {{ __('order_store_status.' . \App\OrderStoreStatus::ORDERED) }}
+                                                       data-status="{{ \App\Models\OrderStoreStatus::ORDERED }}">
+                                                        {{ __('order_store_status.' . \App\Models\OrderStoreStatus::ORDERED) }}
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="store-order-status-control" href="javascript:void(0);"
-                                                       data-status="{{ \App\OrderStoreStatus::CREATED }}">
-                                                        {{ __('order_store_status.' . \App\OrderStoreStatus::CREATED) }}
+                                                       data-status="{{ \App\Models\OrderStoreStatus::CREATED }}">
+                                                        {{ __('order_store_status.' . \App\Models\OrderStoreStatus::CREATED) }}
                                                     </a>
                                                 </li>
                                             </ul>
@@ -477,19 +477,19 @@
                                                         <select name="status" class="form-control order-item-status"
                                                                 data-order-item-id="{{ $item->id }}">
                                                             <option
-                                                                value="{{ \App\OrderItemStatus::CANCELED }}"{{ ($item->status == \App\OrderItemStatus::CANCELED) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\OrderItemStatus::CANCELED) }}</option>
+                                                                value="{{ \App\Models\OrderItemStatus::CANCELED }}"{{ ($item->status == \App\Models\OrderItemStatus::CANCELED) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\Models\OrderItemStatus::CANCELED) }}</option>
                                                             <option
-                                                                value="{{ \App\OrderItemStatus::PAID }}"{{ ($item->status == \App\OrderItemStatus::PAID) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\OrderItemStatus::PAID) }}</option>
+                                                                value="{{ \App\Models\OrderItemStatus::PAID }}"{{ ($item->status == \App\Models\OrderItemStatus::PAID) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\Models\OrderItemStatus::PAID) }}</option>
                                                             <option
-                                                                value="{{ \App\OrderItemStatus::READY_FOR_DELIVERY }}"{{ ($item->status == \App\OrderItemStatus::READY_FOR_DELIVERY) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\OrderItemStatus::READY_FOR_DELIVERY) }}</option>
+                                                                value="{{ \App\Models\OrderItemStatus::READY_FOR_DELIVERY }}"{{ ($item->status == \App\Models\OrderItemStatus::READY_FOR_DELIVERY) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\Models\OrderItemStatus::READY_FOR_DELIVERY) }}</option>
                                                             <option
-                                                                value="{{ \App\OrderItemStatus::GIVEN_TO_COURIER }}"{{ ($item->status == \App\OrderItemStatus::GIVEN_TO_COURIER) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\OrderItemStatus::GIVEN_TO_COURIER) }}</option>
+                                                                value="{{ \App\Models\OrderItemStatus::GIVEN_TO_COURIER }}"{{ ($item->status == \App\Models\OrderItemStatus::GIVEN_TO_COURIER) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\Models\OrderItemStatus::GIVEN_TO_COURIER) }}</option>
                                                             <option
-                                                                value="{{ \App\OrderItemStatus::RE_DELIVERY }}"{{ ($item->status == \App\OrderItemStatus::RE_DELIVERY) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\OrderItemStatus::RE_DELIVERY) }}</option>
+                                                                value="{{ \App\Models\OrderItemStatus::RE_DELIVERY }}"{{ ($item->status == \App\Models\OrderItemStatus::RE_DELIVERY) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\Models\OrderItemStatus::RE_DELIVERY) }}</option>
                                                             <option
-                                                                value="{{ \App\OrderItemStatus::REFUNDED }}"{{ ($item->status == \App\OrderItemStatus::REFUNDED) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\OrderItemStatus::REFUNDED) }}</option>
+                                                                value="{{ \App\Models\OrderItemStatus::REFUNDED }}"{{ ($item->status == \App\Models\OrderItemStatus::REFUNDED) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\Models\OrderItemStatus::REFUNDED) }}</option>
                                                             <option
-                                                                value="{{ \App\OrderItemStatus::COMPLETED }}"{{ ($item->status == \App\OrderItemStatus::COMPLETED) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\OrderItemStatus::COMPLETED) }}</option>
+                                                                value="{{ \App\Models\OrderItemStatus::COMPLETED }}"{{ ($item->status == \App\Models\OrderItemStatus::COMPLETED) ? ' selected' : ''}}>{{ __('order_item_status.' . \App\Models\OrderItemStatus::COMPLETED) }}</option>
                                                         </select>
                                                     </div>
                                                 </td>

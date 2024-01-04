@@ -3,7 +3,7 @@
 namespace App\Notifications;
 
 use App\Channels\SmsAeroChannel;
-use App\Order;
+use App\Models\Order;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;
 

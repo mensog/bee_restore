@@ -1,9 +1,9 @@
 <?php
 
 return [
-    \App\UserRole::ADMIN => 'администратор',
-    \App\UserRole::COURIER => 'курьер',
-    \App\UserRole::CUSTOMER => 'покупатель',
-    \App\UserRole::MANAGER => 'менеджер',
-    \App\UserRole::PARTNER => 'партнер',
+    \App\Models\UserRole::ADMIN => 'администратор',
+    \App\Models\UserRole::COURIER => 'курьер',
+    \App\Models\UserRole::CUSTOMER => 'покупатель',
+    \App\Models\UserRole::MANAGER => 'менеджер',
+    \App\Models\UserRole::PARTNER => 'партнер',
 ];

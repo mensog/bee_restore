@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Notifications\OrderRefundedNotification;
-use App\OrderItem;
-use App\OrderItemStatus;
+use App\Models\OrderItem;
+use App\Models\OrderItemStatus;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 

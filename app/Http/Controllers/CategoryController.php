@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\ProductsCatalogRender;
-use App\ProductsSearchRender;
+use App\Models\ProductsCatalogRender;
+use App\Models\ProductsSearchRender;
 use Illuminate\Http\Request;
 
 class CategoryController extends ProductsRenderController

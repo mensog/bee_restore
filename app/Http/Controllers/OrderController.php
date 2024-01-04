@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Cart;
-use App\Delivery;
-use App\Order;
-use App\OrderStatus;
-use App\Promocode;
+use App\Models\Cart;
+use App\Models\Delivery;
+use App\Models\Order;
+use App\Models\OrderStatus;
+use App\Models\Promocode;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;

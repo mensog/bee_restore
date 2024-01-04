@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\OrderStore;
-use App\OrderStoreStatus;
+use App\Models\OrderStore;
+use App\Models\OrderStoreStatus;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 

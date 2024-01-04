@@ -1,9 +1,9 @@
 <?php
 
 return [
-    \App\OrderStoreStatus::CANCELED => 'Отменен',
-    \App\OrderStoreStatus::READY_FOR_DELIVERY => 'Готов к выдаче',
-    \App\OrderStoreStatus::CREATED => 'Создан',
-    \App\OrderStoreStatus::ORDERED => 'Заказан',
-    \App\OrderStoreStatus::PAID => 'Оплачен',
+    \App\Models\OrderStoreStatus::CANCELED => 'Отменен',
+    \App\Models\OrderStoreStatus::READY_FOR_DELIVERY => 'Готов к выдаче',
+    \App\Models\OrderStoreStatus::CREATED => 'Создан',
+    \App\Models\OrderStoreStatus::ORDERED => 'Заказан',
+    \App\Models\OrderStoreStatus::PAID => 'Оплачен',
 ];

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -8,11 +8,11 @@ class ProductAttributeValue extends Model
 {
     public function products()
     {
-        return $this->belongsTo('App\Product');
+        return $this->belongsTo('App\Models\Product');
     }
 
     public function productAttribute()
     {
-        return $this->belongsTo('App\ProductAttribute');
+        return $this->belongsTo('App\Models\ProductAttribute');
     }
 }

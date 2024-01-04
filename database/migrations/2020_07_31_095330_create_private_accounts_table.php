@@ -20,8 +20,8 @@ class CreatePrivateAccountsTable extends Migration
             $table->integer('refund_amount')->default(0);
             $table->integer('bonus_amount')->default(0);
         });
-        \App\User::all()->each(function ($user) {
-            $account = new \App\PrivateAccount();
+        \App\Models\User::all()->each(function ($user) {
+            $account = new \App\Models\PrivateAccount();
             $account->user_id = $user->id;
             $account->save();
         });

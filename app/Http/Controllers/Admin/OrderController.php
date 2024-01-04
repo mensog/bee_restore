@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Courier;
-use App\Delivery;
+use App\Models\Courier;
+use App\Models\Delivery;
 use App\Http\Controllers\Controller;
-use App\Order;
-use App\OrderStatus;
-use App\Partner;
+use App\Models\Order;
+use App\Models\OrderStatus;
+use App\Models\Partner;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;

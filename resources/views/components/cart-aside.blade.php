@@ -16,13 +16,13 @@
         <div class="checkout__wrap">
             <div class="checkout__box">
                 <span class="checkout__weight">Вес:</span>
-                @if($totalWeight > \App\Order::WEIGHT_MAX_LIMIT)
-                    <span class="checkout__weight-limit">Вес не больше {{ \App\Order::WEIGHT_MAX_LIMIT / 1000 }} кг</span>
-                @elseif($totalWeight < \App\Order::WEIGHT_MIN_LIMIT)
-                     <span class="checkout__weight-limit">Вес не меньше {{ \App\Order::WEIGHT_MIN_LIMIT / 1000 }} кг</span>
+                @if($totalWeight > \App\Models\Order::WEIGHT_MAX_LIMIT)
+                    <span class="checkout__weight-limit">Вес не больше {{ \App\Models\Order::WEIGHT_MAX_LIMIT / 1000 }} кг</span>
+                @elseif($totalWeight < \App\Models\Order::WEIGHT_MIN_LIMIT)
+                     <span class="checkout__weight-limit">Вес не меньше {{ \App\Models\Order::WEIGHT_MIN_LIMIT / 1000 }} кг</span>
                 @endif
             </div>
-            @if($totalWeight > \App\Order::WEIGHT_MAX_LIMIT || $totalWeight < \App\Order::WEIGHT_MIN_LIMIT)
+            @if($totalWeight > \App\Models\Order::WEIGHT_MAX_LIMIT || $totalWeight < \App\Models\Order::WEIGHT_MIN_LIMIT)
                 <span class="checkout__weight-total">{{ $totalWeight / 1000}} кг</span>
             @else
                 <span class="checkout__weight-total text-body">{{ $totalWeight / 1000}} кг</span>
@@ -49,7 +49,7 @@
     <div class="promocode mb-4">
         @if($promocode)
             <h4 class="promocode__heading">Промокод</h4>
-            <p>Вы применили промокод {{ $promocode->name }} на скидку {{ $promocode->amount_type == \App\PromocodeType::PERCENTAGE ? $promocode->amount : $promocode->amount / 100 }} {{ __('promocode_type_short.' . $promocode->amount_type) }}</p>
+            <p>Вы применили промокод {{ $promocode->name }} на скидку {{ $promocode->amount_type == \App\Models\PromocodeType::PERCENTAGE ? $promocode->amount : $promocode->amount / 100 }} {{ __('promocode_type_short.' . $promocode->amount_type) }}</p>
             <button class="promocode__btn btn btn-empty remove-promocode">Отменить промокод</button>
         @else
             <h4 class="promocode__heading">Введите промокод</h4>

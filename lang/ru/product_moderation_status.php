@@ -1,7 +1,7 @@
 <?php
 
 return [
-    \App\ProductModerationStatus::WAITING => 'Ожидает модерации',
-    \App\ProductModerationStatus::DONE => 'Модерация пройдена',
-    \App\ProductModerationStatus::REJECTED => 'Модерация не пройдена',
+    \App\Models\ProductModerationStatus::WAITING => 'Ожидает модерации',
+    \App\Models\ProductModerationStatus::DONE => 'Модерация пройдена',
+    \App\Models\ProductModerationStatus::REJECTED => 'Модерация не пройдена',
 ];

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\StaticPage;
+use App\Models\StaticPage;
 use Illuminate\Http\Request;
 
 class StaticPageController extends Controller

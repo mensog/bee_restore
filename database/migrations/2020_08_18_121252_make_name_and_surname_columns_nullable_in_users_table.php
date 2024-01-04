@@ -26,7 +26,7 @@ class MakeNameAndSurnameColumnsNullableInUsersTable extends Migration
      */
     public function down()
     {
-        $users = \App\User::all();
+        $users = \App\Models\User::all();
         foreach ($users as $user) {
             if (is_null($user->name)) {
                 $user->name = '';

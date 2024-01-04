@@ -15,7 +15,7 @@ class AddExistStatusAndProcessStatusToOrderItemsTable extends Migration
     {
         Schema::table('order_items', function (Blueprint $table) {
             $table->integer('exist_status')->default(1);
-            $table->string('process_status')->default(\App\OrderItemStatus::PAID);
+            $table->string('process_status')->default(\App\Models\OrderItemStatus::PAID);
         });
     }
 

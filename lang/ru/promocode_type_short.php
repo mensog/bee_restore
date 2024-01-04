@@ -1,6 +1,6 @@
 <?php
 
 return [
-    \App\PromocodeType::ABSOLUT => '₽',
-    \App\PromocodeType::PERCENTAGE => '%',
+    \App\Models\PromocodeType::ABSOLUT => '₽',
+    \App\Models\PromocodeType::PERCENTAGE => '%',
 ];

@@ -150,9 +150,9 @@
                                         <div class="form-group">
                                             <select id="moderation" name="moderation" class="form-control" required>
                                                 <option value="" disabled selected></option>
-                                                <option value="{{ \App\ProductModerationStatus::WAITING }}"{{ ($product->moderation == \App\ProductModerationStatus::WAITING) ? ' selected' : '' }}>{{ __('product_moderation_status.' . \App\ProductModerationStatus::WAITING) }}</option>
-                                                <option value="{{ \App\ProductModerationStatus::DONE }}"{{ ($product->moderation == \App\ProductModerationStatus::DONE) ? ' selected' : '' }}>{{ __('product_moderation_status.' . \App\ProductModerationStatus::DONE) }}</option>
-                                                <option value="{{ \App\ProductModerationStatus::REJECTED }}"{{ ($product->moderation == \App\ProductModerationStatus::REJECTED) ? ' selected' : '' }}>{{ __('product_moderation_status.' . \App\ProductModerationStatus::REJECTED) }}</option>
+                                                <option value="{{ \App\Models\ProductModerationStatus::WAITING }}"{{ ($product->moderation == \App\Models\ProductModerationStatus::WAITING) ? ' selected' : '' }}>{{ __('product_moderation_status.' . \App\Models\ProductModerationStatus::WAITING) }}</option>
+                                                <option value="{{ \App\Models\ProductModerationStatus::DONE }}"{{ ($product->moderation == \App\Models\ProductModerationStatus::DONE) ? ' selected' : '' }}>{{ __('product_moderation_status.' . \App\Models\ProductModerationStatus::DONE) }}</option>
+                                                <option value="{{ \App\Models\ProductModerationStatus::REJECTED }}"{{ ($product->moderation == \App\Models\ProductModerationStatus::REJECTED) ? ' selected' : '' }}>{{ __('product_moderation_status.' . \App\Models\ProductModerationStatus::REJECTED) }}</option>
                                             </select>
                                             <label for="moderation">Модерация</label>
                                         </div>

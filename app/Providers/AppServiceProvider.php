@@ -2,11 +2,11 @@
 
 namespace App\Providers;
 
-use App\Cart;
-use App\Category;
-use App\FavoriteList;
+use App\Models\Category;
+use App\Models\Cart;
+use App\Models\FavoriteList;
 use App\Observers\CartObserver;
-use App\Partner;
+use App\Models\Partner;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Pagination\Paginator;
