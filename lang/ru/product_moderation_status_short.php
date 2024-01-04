@@ -1,7 +1,8 @@
 <?php
+use App\Models\ProductModerationStatus;
 
 return [
-    \App\Models\ProductModerationStatus::WAITING => 'ожидает',
-    \App\Models\ProductModerationStatus::DONE => 'пройдена',
-    \App\Models\ProductModerationStatus::REJECTED => 'не пройдена',
+    ProductModerationStatus::WAITING => 'ожидает',
+    ProductModerationStatus::DONE => 'пройдена',
+    ProductModerationStatus::REJECTED => 'не пройдена',
 ];

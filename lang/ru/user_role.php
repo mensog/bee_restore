@@ -1,9 +1,10 @@
 <?php
+use App\Models\UserRole;
 
 return [
-    \App\Models\UserRole::ADMIN => 'администратор',
-    \App\Models\UserRole::COURIER => 'курьер',
-    \App\Models\UserRole::CUSTOMER => 'покупатель',
-    \App\Models\UserRole::MANAGER => 'менеджер',
-    \App\Models\UserRole::PARTNER => 'партнер',
+    UserRole::ADMIN => 'администратор',
+    UserRole::COURIER => 'курьер',
+    UserRole::CUSTOMER => 'покупатель',
+    UserRole::MANAGER => 'менеджер',
+    UserRole::PARTNER => 'партнер',
 ];

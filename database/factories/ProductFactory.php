@@ -28,6 +28,7 @@ class ProductFactory extends Factory
             'img_url' => $this->faker->imageUrl(300, 250),
             'description' => fake()->text(rand(150, 350)),
             'weight' => fake()->numberBetween(50, 50000),
+            // 'category_id' => 
         ];
     }
 }

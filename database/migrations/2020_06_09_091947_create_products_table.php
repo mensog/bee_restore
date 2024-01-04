@@ -22,9 +22,9 @@ class CreateProductsTable extends Migration
             $table->string('friendly_url_name')->unique();
             $table->string('parse_url');
             $table->integer('price');
-            $table->string('img_url');
-            $table->text('description');
-            $table->integer('weight');
+            $table->string('img_url')->nullable();
+            $table->text('description')->nullable();
+            $table->string('weight')->nullable();
 
             $table->foreignId('category_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
         });
